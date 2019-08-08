@@ -1,0 +1,24 @@
+import * as  React from 'react'
+import { Component, Ref } from 'react'
+
+class Stage extends Component<any, any> {
+    [x: string]: any;
+    width = 1000;
+    height = 1000;
+    constructor(props:any){
+        super(props);
+
+    }
+    getRef = (ref: HTMLCanvasElement) =>{
+        this.setState({canvas:ref})
+    }  
+    render() {
+        return (
+            <div>
+                <canvas ref={this.getRef} width={this.width} height = {this.height} />
+            </div>)
+    }
+}
+
+
+export default Stage;

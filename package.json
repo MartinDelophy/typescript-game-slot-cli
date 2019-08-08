@@ -1,0 +1,55 @@
+{
+  "name": "tytt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "webpack-dev-server --config webpack.config.ts --mode development"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "@types/enzyme": "^3.10.3",
+    "@types/enzyme-adapter-react-16": "^1.0.5",
+    "@types/node": "^12.6.9",
+    "@types/react": "^16.8.24",
+    "@types/react-dom": "^16.8.5",
+    "@types/react-router-config": "^5.0.0",
+    "@types/webpack": "^4.32.1",
+    "babel-loader": "^8.0.6",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "jest": "^24.8.0",
+    "majestic": "^1.6.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-test-renderer": "^16.8.6",
+    "ts-loader": "^6.0.4",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.5.3",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2"
+  },
+  "dependencies": {
+    "@types/jest": "^24.0.17",
+    "@types/react-router-dom": "^4.3.4",
+    "babel-jest": "^24.8.0",
+    "react-router": "^5.0.1",
+    "react-router-config": "^5.0.1",
+    "react-router-dom": "^5.0.1",
+    "ts-jest": "^24.0.2",
+    "webpack": "^4.39.1"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "tsx"
+    ],
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    }
+  }
+}
