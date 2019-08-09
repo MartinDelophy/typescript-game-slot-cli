@@ -1,6 +1,7 @@
+const pic = require('../static/personal_bg.png'); 
 
 const config = {
-    stageBackgroundImage :'',
+    stageBackgroundImage :pic,
 
 }
 
