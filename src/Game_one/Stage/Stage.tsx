@@ -1,5 +1,9 @@
 import * as  React from 'react'
 import { Component, Ref } from 'react'
+const Style = require('./style.less') 
+console.log(Style)
+
+
 
 class Stage extends Component<any, any> {
     [x: string]: any;
@@ -15,7 +19,7 @@ class Stage extends Component<any, any> {
     render() {
         return (
             <div>
-                <canvas ref={this.getRef} width={this.width} height = {this.height} />
+                <canvas className={Style.canvasBorder}  ref={this.getRef} width={this.width} height = {this.height} />
             </div>)
     }
 }
