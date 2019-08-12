@@ -1,0 +1,12 @@
+FROM circleci/node:latest-browsers
+
+USER root
+COPY package.json ./
+RUN apt-get -qq node
+
+
+COPY ./ ./
+
+RUN npm run test:all
+
+CMD ["npm", "run", "build"]
