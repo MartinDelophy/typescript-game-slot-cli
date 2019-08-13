@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "start": "webpack-dev-server --config webpack.config.ts --mode development"
+    "start": "cross-env  webpack-dev-server --config webpack.config.ts --mode development "
   },
   "author": "",
   "license": "ISC",
@@ -46,8 +46,12 @@
   "dependencies": {
     "@types/jest": "^24.0.17",
     "@types/less": "^3.0.0",
+    "@types/lodash": "^4.14.136",
     "@types/react-router-dom": "^4.3.4",
     "babel-jest": "^24.8.0",
+    "cross-env": "^5.2.0",
+    "install": "^0.13.0",
+    "npm": "^6.10.3",
     "react-router": "^5.0.1",
     "react-router-config": "^5.0.1",
     "react-router-dom": "^5.0.1",

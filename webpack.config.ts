@@ -1,4 +1,5 @@
 const path = require('path');
+console.log(process.argv, process.env.MOCK)
 
 module.exports = {
     entry: './src/index.tsx',
